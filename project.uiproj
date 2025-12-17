@@ -1,0 +1,6 @@
+{
+  "Name": "ShowMeWhatYouGot",
+  "ProjectType": "Process",
+  "Description": "London Stock Exchange scraping - UiPath\r\nWrite the code as if you were writing for a client. The code that you will be so proud of that you'll be telling your grandchildren about!",
+  "MainFile": "Main.xaml"
+}
