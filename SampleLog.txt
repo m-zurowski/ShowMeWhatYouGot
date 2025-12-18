@@ -1,0 +1,94 @@
+12/18/2025 13:06:59 => [Trace] Debug started for file: Main
+12/18/2025 13:07:00 => [Information] ShowMeWhatYouGot execution started
+{
+  "message": "ShowMeWhatYouGot execution started",
+  "level": "Information",
+  "logType": "Default",
+  "timeStamp": "13:07:00",
+  "fileName": "Main",
+  "initiatedBy": "Studio",
+  "jobId": "61fd2d52-c23d-42f0-91a5-4a304167485b",
+  "robotName": "zurowski.maciek@gmail.com-attended",
+  "machineId": 5558907,
+  "userKey": "531984a5-5ea6-4102-b53c-3d6d3b2d216c",
+  "processVersion": "1.0.0",
+  "organizationUnitId": 7405258,
+  "businessOperationId": "d44d8d51cf9545e3981333d491f7ece2-7dd03aa266504f4782ce95b19d086347"
+}
+12/18/2025 13:07:00 => [Information] Initialization: Attempting to read config file.
+{
+  "message": "Initialization: Attempting to read config file.",
+  "level": "Information",
+  "logType": "User",
+  "timeStamp": "13:07:00",
+  "fileName": "Main",
+  "jobId": "61fd2d52-c23d-42f0-91a5-4a304167485b",
+  "robotName": "zurowski.maciek@gmail.com-attended",
+  "machineId": 5558907,
+  "userKey": "531984a5-5ea6-4102-b53c-3d6d3b2d216c",
+  "processVersion": "1.0.0",
+  "organizationUnitId": 7405258,
+  "businessOperationId": "d44d8d51cf9545e3981333d491f7ece2-7dd03aa266504f4782ce95b19d086347"
+}
+12/18/2025 13:07:00 => [Verbose] Initialization: Finished processing config file.
+{
+  "message": "Initialization: Finished processing config file.",
+  "level": "Fatal",
+  "logType": "User",
+  "timeStamp": "13:07:00",
+  "fileName": "Main",
+  "jobId": "61fd2d52-c23d-42f0-91a5-4a304167485b",
+  "robotName": "zurowski.maciek@gmail.com-attended",
+  "machineId": 5558907,
+  "userKey": "531984a5-5ea6-4102-b53c-3d6d3b2d216c",
+  "processVersion": "1.0.0",
+  "organizationUnitId": 7405258,
+  "businessOperationId": "d44d8d51cf9545e3981333d491f7ece2-7dd03aa266504f4782ce95b19d086347"
+}
+12/18/2025 13:07:00 => [Information] Initialization: Attempting to read input file.
+{
+  "message": "Initialization: Attempting to read input file.",
+  "level": "Information",
+  "logType": "User",
+  "timeStamp": "13:07:00",
+  "fileName": "Main",
+  "jobId": "61fd2d52-c23d-42f0-91a5-4a304167485b",
+  "robotName": "zurowski.maciek@gmail.com-attended",
+  "machineId": 5558907,
+  "userKey": "531984a5-5ea6-4102-b53c-3d6d3b2d216c",
+  "processVersion": "1.0.0",
+  "organizationUnitId": 7405258,
+  "businessOperationId": "d44d8d51cf9545e3981333d491f7ece2-7dd03aa266504f4782ce95b19d086347"
+}
+12/18/2025 13:07:00 => [Verbose] Initialization: Finished processing input file.
+{
+  "message": "Initialization: Finished processing input file.",
+  "level": "Fatal",
+  "logType": "User",
+  "timeStamp": "13:07:00",
+  "fileName": "Main",
+  "jobId": "61fd2d52-c23d-42f0-91a5-4a304167485b",
+  "robotName": "zurowski.maciek@gmail.com-attended",
+  "machineId": 5558907,
+  "userKey": "531984a5-5ea6-4102-b53c-3d6d3b2d216c",
+  "processVersion": "1.0.0",
+  "organizationUnitId": 7405258,
+  "businessOperationId": "d44d8d51cf9545e3981333d491f7ece2-7dd03aa266504f4782ce95b19d086347"
+}
+12/18/2025 13:07:00 => [Information] ShowMeWhatYouGot execution ended in: 00:00:00
+{
+  "message": "ShowMeWhatYouGot execution ended",
+  "level": "Information",
+  "logType": "Default",
+  "timeStamp": "13:07:00",
+  "fileName": "Main",
+  "totalExecutionTimeInSeconds": 0,
+  "totalExecutionTime": "00:00:00",
+  "jobId": "61fd2d52-c23d-42f0-91a5-4a304167485b",
+  "robotName": "zurowski.maciek@gmail.com-attended",
+  "machineId": 5558907,
+  "userKey": "531984a5-5ea6-4102-b53c-3d6d3b2d216c",
+  "processVersion": "1.0.0",
+  "organizationUnitId": 7405258,
+  "businessOperationId": "d44d8d51cf9545e3981333d491f7ece2-7dd03aa266504f4782ce95b19d086347"
+}
