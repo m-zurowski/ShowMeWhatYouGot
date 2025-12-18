@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Chrome Browser",
+  "Type": "App",
+  "Id": "0hoNUOLEJ0amP59w6pkVvg",
+  "Reference": "f-pMzuCHXEmXz7kq9WENMQ/0hoNUOLEJ0amP59w6pkVvg",
+  "Created": "2025-12-18T12:44:09.205059Z",
+  "Updated": "2025-12-18T14:10:09.4817509Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.22.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

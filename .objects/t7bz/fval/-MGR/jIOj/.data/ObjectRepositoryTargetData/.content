@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="kKX59ELinEWt3TZcfTDydg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="londonstockexchange.com/stock/OCDO/ocado-group-plc/company-page" DesignTimeRectangle="389, 476, 1144, 472" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='trades-table' tag='DIV' /&gt;" Guid="a79dca6f-b537-4513-a357-5f5e3350ddc5" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OCADO GROUP PLC OCDO Stock | London Stock Exchange' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="6ae25e2a1d7283043f0d6f547b894ddf.png" xmlns="">0uoPlzNzkjU-rCg3KsFIQtQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

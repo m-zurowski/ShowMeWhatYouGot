@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="IKQE6nRc-E-wCdHonnQQsg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="londonstockexchange.com/stock/VOD/vodafone-group-plc/company-page" CVScreenId="247302f9-0111-4617-89d5-d28d5a909e21" CvTextArea="1210, 212, 32, 13" CvTextArgument="VOD" CvType="Text" DesignTimeRectangle="1212, 210, 29, 18" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='issuer-key' parentid='instrument-0' tag='DIV' /&gt;" Guid="5d88cbb7-4c33-4ec1-83a5-665000f120e9" ScopeSelectorArgument="&lt;html app='chrome.exe' title='VODAFONE GROUP PLC VOD Stock | London Stock Exchange' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="9ac565bdbe5f4fe7200ed5a28ddfd8ac.png" xmlns="">0Hp-A69s6XUW6_z6ew7cvkg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
