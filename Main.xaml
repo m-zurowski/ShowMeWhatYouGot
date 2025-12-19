@@ -3,29 +3,18 @@
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
-      <x:String>System.Activities.Expressions</x:String>
-      <x:String>System.Activities.Validation</x:String>
-      <x:String>System.Activities.XamlIntegration</x:String>
       <x:String>Microsoft.VisualBasic</x:String>
-      <x:String>Microsoft.VisualBasic.Activities</x:String>
       <x:String>System</x:String>
       <x:String>System.Collections</x:String>
       <x:String>System.Collections.Generic</x:String>
       <x:String>System.Collections.ObjectModel</x:String>
       <x:String>System.Data</x:String>
-      <x:String>System.Diagnostics</x:String>
       <x:String>System.Drawing</x:String>
-      <x:String>System.IO</x:String>
       <x:String>System.Linq</x:String>
-      <x:String>System.Net.Mail</x:String>
-      <x:String>System.Xml</x:String>
-      <x:String>System.Xml.Linq</x:String>
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
-      <x:String>System.Windows.Markup</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
-      <x:String>System.Linq.Expressions</x:String>
       <x:String>System.Runtime.Serialization</x:String>
       <x:String>UiPath.Platform.ResourceHandling</x:String>
       <x:String>System.Reflection</x:String>
@@ -37,11 +26,9 @@
       <x:String>System.ComponentModel</x:String>
       <x:String>System.Collections.Specialized</x:String>
       <x:String>UiPath.Web.Activities</x:String>
-      <x:String>RestSharp</x:String>
       <x:String>System.Xml.Serialization</x:String>
       <x:String>UiPath.CSV</x:String>
       <x:String>UiPath.CSV.Activities</x:String>
-      <x:String>System.Numerics</x:String>
       <x:String>UiPath.UIAutomationNext.Enums</x:String>
       <x:String>UiPath.UIAutomationCore.Contracts</x:String>
       <x:String>UiPath.UIAutomationNext.Models</x:String>
@@ -50,11 +37,14 @@
       <x:String>UiPath.Platform.ObjectLibrary</x:String>
       <x:String>UiPath.Platform.SyncObjects</x:String>
       <x:String>UiPath.DataTableUtilities</x:String>
-      <x:String>UiPath.Activities.System.Text</x:String>
-      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
-      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Semantic.Activities</x:String>
+      <x:String>UiPath.Semantic.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Design.SWEntities.fd1310182503.Bundle</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -121,6 +111,8 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>fd1310182503.NxjFt27dDLI17BTj33kbLF24</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -129,7 +121,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="2427,1667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="2221,8516" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="websiteUrl" />
       <Variable x:TypeArguments="sd2:DataTable" Name="stockData" />
@@ -141,14 +133,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Init" sap:VirtualizedContainerService.HintSize="522,57" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Init" sap:VirtualizedContainerService.HintSize="662,6199" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="inputFilePath" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <Sequence DisplayName="Load data from config file" sap:VirtualizedContainerService.HintSize="628,2024" sap2010:WorkflowViewState.IdRef="Sequence_9">
@@ -452,25 +444,25 @@
       </ui:CommentOut>
       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="628,166" sap2010:WorkflowViewState.IdRef="LogMessage_25" Level="Info" Message="[&quot;Initialization completed.&quot;]" />
     </Sequence>
-    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="522,1587" sap2010:WorkflowViewState.IdRef="Sequence_24">
+    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="662,2294" sap2010:WorkflowViewState.IdRef="Sequence_24">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Chrome Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,1504" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="4b2648d2-bd2a-4265-9dc2-3d311e677421" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Chrome Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="558,2211" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="4b2648d2-bd2a-4265-9dc2-3d311e677421" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,1310" sap2010:WorkflowViewState.IdRef="Sequence_32">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="556,2017" sap2010:WorkflowViewState.IdRef="Sequence_32">
               <Sequence.Variables>
-                <Variable x:TypeArguments="ui:UiElement" Name="tradeDate" />
-                <Variable x:TypeArguments="ui:UiElement" Name="tradeTime" />
-                <Variable x:TypeArguments="ui:UiElement" Name="tradeValue" />
-                <Variable x:TypeArguments="ui:UiElement" Name="tradeCurrency" />
+                <Variable x:TypeArguments="x:String" Name="tradeValue" />
+                <Variable x:TypeArguments="x:String" Name="tradeCurrency" />
+                <Variable x:TypeArguments="x:String" Name="tradeDate" />
+                <Variable x:TypeArguments="x:String" Name="tradeTime" />
               </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -478,13 +470,13 @@
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[stockData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="452,1246" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[stockData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="522,1953" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                 <ui:ForEachRow.Body>
                   <ActivityAction x:TypeArguments="sd2:DataRow">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="sd2:DataRow" Name="CurrentRow" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,1069" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,1731" sap2010:WorkflowViewState.IdRef="Sequence_26">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:String" Name="currentSearchPhrase" />
                       </Sequence.Variables>
@@ -494,7 +486,7 @@
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Assign sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="Assign_4">
+                      <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_4">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[currentSearchPhrase]</OutArgument>
                         </Assign.To>
@@ -502,30 +494,86 @@
                           <InArgument x:TypeArguments="x:String">[CurrentRow.Item("company name").ToString + ", " + CurrentRow.Item("stock code").ToString]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="LogMessage_26" Level="Trace" Message="[&quot;Searching for: &quot; + currentSearchPhrase]" />
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT quick-search-input'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4b2648d2-bd2a-4265-9dc2-3d311e677421" Version="V5">
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_26" Level="Trace" Message="[&quot;Searching for: &quot; + currentSearchPhrase]" />
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT quick-search-input'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4b2648d2-bd2a-4265-9dc2-3d311e677421" Version="V5">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="londonstockexchange.com" CVScreenId="362ba790-ccae-49b3-b2dd-81f05b2bbd6b" ContentHash="hSUZoAcsTEWAx46dqeLUYw" CvElementArea="1196, 111, 338, 42" CvType="InputBox" DesignTimeRectangle="1197, 112, 336, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='quick-search-input' tag='INPUT' /&gt;" Guid="38ae66cd-0cd0-4658-823d-c635dc468d6c" InformativeScreenshot="5aa60e57bd5e6a41455516b899ee3cdd.png" Reference="f-pMzuCHXEmXz7kq9WENMQ/9SmNuZhaTkyZBsPvwUFh0w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='London Stock Exchange homepage | London Stock Exchange' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                         </uix:NClick.Target>
                       </uix:NClick>
-                      <uix:NSetText DisplayName="Set Text 'INPUT quick-search-input'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,199" sap2010:WorkflowViewState.IdRef="NSetText_2" ScopeIdentifier="4b2648d2-bd2a-4265-9dc2-3d311e677421" Text="[currentSearchPhrase]" Version="V5">
+                      <uix:NSetText DisplayName="Set Text 'INPUT quick-search-input'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NSetText_2" ScopeIdentifier="4b2648d2-bd2a-4265-9dc2-3d311e677421" Text="[currentSearchPhrase]" Version="V5">
                         <uix:NSetText.Target>
                           <uix:TargetAnchorable BrowserURL="londonstockexchange.com" CVScreenId="362ba790-ccae-49b3-b2dd-81f05b2bbd6b" ContentHash="hSUZoAcsTEWAx46dqeLUYw" CvElementArea="1196, 111, 338, 42" CvType="InputBox" DesignTimeRectangle="1197, 112, 336, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='quick-search-input' tag='INPUT' /&gt;" Guid="38ae66cd-0cd0-4658-823d-c635dc468d6c" InformativeScreenshot="5aa60e57bd5e6a41455516b899ee3cdd.png" Reference="f-pMzuCHXEmXz7kq9WENMQ/9SmNuZhaTkyZBsPvwUFh0w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='London Stock Exchange homepage | London Stock Exchange' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                         </uix:NSetText.Target>
                       </uix:NSetText>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Company Name'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4b2648d2-bd2a-4265-9dc2-3d311e677421" Version="V5">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Company Name'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4b2648d2-bd2a-4265-9dc2-3d311e677421" Version="V5">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="londonstockexchange.com/stock/VOD/vodafone-group-plc/company-page" CVScreenId="247302f9-0111-4617-89d5-d28d5a909e21" ContentHash="tQuOnGVF4EKc5TVtdXOTWA" DesignTimeRectangle="1212, 210, 29, 18" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='issuer-key' parentid='instrument-0' tag='DIV' /&gt;" Guid="5d88cbb7-4c33-4ec1-83a5-665000f120e9" InformativeScreenshot="95da2dcf7d543a4ef81f6cb8ccfb2231.png" Reference="f-pMzuCHXEmXz7kq9WENMQ/GvH8BzFBhUqMlWGOs2n5Tg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='VODAFONE GROUP PLC VOD Stock | London Stock Exchange' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                         </uix:NClick.Target>
                       </uix:NClick>
-                      <ui:Break sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="Break_1" />
+                      <uix:NGetText DisplayName="Get Text ''Date''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="4b2648d2-bd2a-4265-9dc2-3d311e677421" TextString="[tradeDate]" Version="V5">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="londonstockexchange.com/stock/VOD/vodafone-group-plc/company-page" CVScreenId="cb27072f-017b-4f94-94fa-9d4a7819526f" ContentHash="NVSHeSGbp0qsvkB7OhqatA" CvType="AnyWordGroup" DesignTimeRectangle="434, 679, 51, 21" DesignTimeScaleFactor="1" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='w-time-sales-widget' parentname='center' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='w-time-sales-widget' parentname='center' tag='SPAN' type='' class='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:parentname='fuzzy' fuzzylevel:parentname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="d5ae596a-8d78-4701-8887-a05b8ec4cb0a" InformativeScreenshot="b30d3155ab3b4c0bf467e2c5de63cff9.png" Reference="f-pMzuCHXEmXz7kq9WENMQ/WIkGoS2ap0qbTEwjQs3xXw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='VODAFONE GROUP PLC VOD Stock | London Stock Exchange' /&gt;" SearchSteps="Selector, CV" Version="V6">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="cb27072f-017b-4f94-94fa-9d4a7819526f" CvTextArea="443, 636, 33, 13" CvTextArgument="Date" CvType="Text" DesignTimeRectangle="444, 632, 31, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='w-time-sales-widget' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='w-time-sales-widget' tag='SPAN' type='' class='ag-header-cell-text' aaname='Date' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Date' /&gt;" Guid="63ff1a29-40a1-4165-9c91-8a2171cb6c11" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:NGetText.Target>
+                      </uix:NGetText>
+                      <uix:NGetText DisplayName="Get Text ''Time''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="4b2648d2-bd2a-4265-9dc2-3d311e677421" TextString="[tradeTime]" Version="V5">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="londonstockexchange.com/stock/VOD/vodafone-group-plc/company-page" CVScreenId="cb27072f-017b-4f94-94fa-9d4a7819526f" ContentHash="_AenU5qwVkaiwjo0vkxk3A" CvType="AnyWordGroup" DesignTimeRectangle="573, 679, 54, 21" DesignTimeScaleFactor="1" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='10:57:35' parentid='w-time-sales-widget' parentname='center' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='w-time-sales-widget' parentname='center' tag='SPAN' type='' class='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:parentname='fuzzy' fuzzylevel:parentname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="54bac3bc-6209-4d64-bf0f-dacd797f0fa0" InformativeScreenshot="e922f5ee686b9e2bae3e8ea10e03dff0.png" Reference="f-pMzuCHXEmXz7kq9WENMQ/oEmkepSDWkitGbAu3EkneQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='VODAFONE GROUP PLC VOD Stock | London Stock Exchange' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="cb27072f-017b-4f94-94fa-9d4a7819526f" CvTextArea="582, 636, 35, 13" CvTextArgument="Time" CvType="Text" DesignTimeRectangle="584, 632, 32, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Time' class='ag-header-cell-text' parentid='w-time-sales-widget' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Time' class='ag-header-cell-text' parentid='w-time-sales-widget' tag='SPAN' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' check:innerText='Time' /&gt;" Guid="00fef650-61dc-4ca9-8dc2-262f800af173" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:NGetText.Target>
+                      </uix:NGetText>
+                      <uix:NGetText DisplayName="Get Text ''Trade Value''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="4b2648d2-bd2a-4265-9dc2-3d311e677421" TextString="[tradeValue]" Version="V5">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="londonstockexchange.com/stock/VOD/vodafone-group-plc/company-page" CVScreenId="cb27072f-017b-4f94-94fa-9d4a7819526f" ContentHash="X6UeY2GEQUOMjjiBxq2-gA" CvType="AnyWordGroup" DesignTimeRectangle="1145, 679, 38, 21" DesignTimeScaleFactor="1" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='721.15' parentid='w-time-sales-widget' parentname='center' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='w-time-sales-widget' parentname='center' tag='SPAN' type='' class='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:parentname='fuzzy' fuzzylevel:parentname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="2d07d904-3f0d-4133-aab3-a1be22786243" InformativeScreenshot="67bf0dc69c9864509c1655bd6d35de2f.png" Reference="f-pMzuCHXEmXz7kq9WENMQ/K8Q-juODskSyNkKrov7BWw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='VODAFONE GROUP PLC VOD Stock | London Stock Exchange' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="cb27072f-017b-4f94-94fa-9d4a7819526f" CvTextArea="1123, 636, 81, 13" CvTextArgument="Trade Value" CvType="Text" DesignTimeRectangle="1125, 632, 78, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Trade Value' class='ag-header-cell-text' parentid='w-time-sales-widget' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Trade Value' class='ag-header-cell-text' parentid='w-time-sales-widget' tag='SPAN' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' check:innerText='Trade Value' /&gt;" Guid="7bcaaebf-f143-49cc-b446-ec8727ba0600" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:NGetText.Target>
+                      </uix:NGetText>
+                      <uix:NGetText DisplayName="Get Text ''Currency''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="4b2648d2-bd2a-4265-9dc2-3d311e677421" TextString="[tradeCurrency]" Version="V5">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="londonstockexchange.com/stock/VOD/vodafone-group-plc/company-page" CVScreenId="cb27072f-017b-4f94-94fa-9d4a7819526f" ContentHash="V1qaO7WkME-loV_EGIvVHQ" CvType="AnyWordGroup" DesignTimeRectangle="867, 679, 30, 21" DesignTimeScaleFactor="1" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='GBX' parentid='w-time-sales-widget' parentname='center' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='w-time-sales-widget' parentname='center' tag='SPAN' type='' class='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:parentname='fuzzy' fuzzylevel:parentname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="be2d047e-3da7-4359-b2f4-64c6d2c33cb6" InformativeScreenshot="6d95f8704e1ce4e1c6f08204cea69d64.png" Reference="f-pMzuCHXEmXz7kq9WENMQ/xm6A5VpNBUOAgHGMtEtFvg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='VODAFONE GROUP PLC VOD Stock | London Stock Exchange' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="cb27072f-017b-4f94-94fa-9d4a7819526f" CvTextArea="851, 636, 62, 16" CvTextArgument="Currency" CvType="Text" DesignTimeRectangle="852, 632, 60, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Currency' class='ag-header-cell-text' parentid='w-time-sales-widget' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Currency' class='ag-header-cell-text' parentid='w-time-sales-widget' tag='SPAN' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' check:innerText='Currency' /&gt;" Guid="f04a26de-b35c-4d65-8804-3f83e52f0236" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:NGetText.Target>
+                      </uix:NGetText>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_31" Level="Info" Message="[tradeDate + tradeTime + tradeValue + tradeCurrency]" />
                     </Sequence>
                   </ActivityAction>
                 </ui:ForEachRow.Body>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:ForEachRow>

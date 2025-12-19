@@ -1,12 +1,12 @@
 ﻿{
-  "Name": "Company Code",
+  "Name": "Trade Time",
   "Type": "Element",
   "TaxonomyType": "Label",
-  "Id": "GvH8BzFBhUqMlWGOs2n5Tg",
-  "Reference": "f-pMzuCHXEmXz7kq9WENMQ/GvH8BzFBhUqMlWGOs2n5Tg",
+  "Id": "oEmkepSDWkitGbAu3EkneQ",
+  "Reference": "f-pMzuCHXEmXz7kq9WENMQ/oEmkepSDWkitGbAu3EkneQ",
   "ParentRef": "f-pMzuCHXEmXz7kq9WENMQ/8n2aYHxAH0mDNBT4qiygRg",
-  "Created": "2025-12-18T13:22:40.260879Z",
-  "Updated": "2025-12-18T16:13:21.0250025Z",
+  "Created": "2025-12-19T11:21:47.5925114Z",
+  "Updated": "2025-12-19T11:23:26.4409516Z",
   "CreatedBy": [
     "UiPath.UIAutomationCore, Version=25.10.22.0, Culture=neutral, PublicKeyToken=null",
     "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"

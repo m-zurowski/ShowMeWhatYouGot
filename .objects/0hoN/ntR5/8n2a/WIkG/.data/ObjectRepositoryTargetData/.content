@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="NVSHeSGbp0qsvkB7OhqatA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="londonstockexchange.com/stock/VOD/vodafone-group-plc/company-page" CVScreenId="cb27072f-017b-4f94-94fa-9d4a7819526f" CvType="AnyWordGroup" DesignTimeRectangle="434, 679, 51, 21" DesignTimeScaleFactor="1" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='w-time-sales-widget' parentname='center' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='w-time-sales-widget' parentname='center' tag='SPAN' type='' class='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:parentname='fuzzy' fuzzylevel:parentname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="d5ae596a-8d78-4701-8887-a05b8ec4cb0a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='VODAFONE GROUP PLC VOD Stock | London Stock Exchange' /&gt;" SearchSteps="Selector, CV" Version="V6">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="cb27072f-017b-4f94-94fa-9d4a7819526f" CvTextArea="443, 636, 33, 13" CvTextArgument="Date" CvType="Text" DesignTimeRectangle="444, 632, 31, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='w-time-sales-widget' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='w-time-sales-widget' tag='SPAN' type='' class='ag-header-cell-text' aaname='Date' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Date' /&gt;" Guid="63ff1a29-40a1-4165-9c91-8a2171cb6c11" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="b30d3155ab3b4c0bf467e2c5de63cff9.png" xmlns="">0VCUtaPP0Dk6QJgpX-7CFmA</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

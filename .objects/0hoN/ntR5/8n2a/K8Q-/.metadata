@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Trade Value",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "K8Q-juODskSyNkKrov7BWw",
+  "Reference": "f-pMzuCHXEmXz7kq9WENMQ/K8Q-juODskSyNkKrov7BWw",
+  "ParentRef": "f-pMzuCHXEmXz7kq9WENMQ/8n2aYHxAH0mDNBT4qiygRg",
+  "Created": "2025-12-19T11:22:09.7852809Z",
+  "Updated": "2025-12-19T11:22:09.7852809Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.22.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
