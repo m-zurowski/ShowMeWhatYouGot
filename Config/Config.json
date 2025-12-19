@@ -1,5 +1,6 @@
 ﻿{
   "URL": "https://www.londonstockexchange.com//",
-  "InputFilePath": "Data\\Input\\London Stock Exchange task - input.csv",
+  "disabled_InputFilePath": "Data\\Input\\London Stock Exchange task - input.csv",
+  "InputFilePath": "Data\\Input\\test.csv",
    "OutputFilePath": "Data\\Output\\London Stock Exchange task - output.csv"
 }

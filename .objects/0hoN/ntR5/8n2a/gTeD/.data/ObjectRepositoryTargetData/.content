@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PGj-DZL-CkiWwrDgbUj0Og" Reference="f-pMzuCHXEmXz7kq9WENMQ/gTeD_vvC0EWgfJ-jqub8ow" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="londonstockexchange.com" DesignTimeRectangle="1198, 157, 334, 33" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H5' /&gt;" Guid="0f9566c9-90be-4e70-895e-729a8b46d421" ScopeSelectorArgument="&lt;html app='chrome.exe' title='London Stock Exchange homepage | London Stock Exchange' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="89a5c3f4b210dffcfbf2d5018c737b36.png" xmlns="">0P5Vcn-bcnkWC4IrK7Y9qKg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">FindElements</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
