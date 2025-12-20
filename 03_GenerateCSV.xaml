@@ -153,7 +153,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_80" Level="Trace" Message="[&quot;Located output folder.&quot;]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_80" Level="Trace" Message="[&quot;Output generator: Located output folder.&quot;]" />
           </Sequence>
         </If.Then>
         <If.Else>
@@ -163,9 +163,9 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="LogMessage_81" Level="Trace" Message="[&quot;Output folder doesn't exist. Creating output folder.&quot;]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="LogMessage_81" Level="Trace" Message="[&quot;Output generator: Output folder doesn't exist. Creating output folder.&quot;]" />
             <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="416,127" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[outputFolder]" />
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_82" Level="Trace" Message="[&quot;Successfully created output folder.&quot;]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_82" Level="Trace" Message="[&quot;Output generator: Successfully created output folder.&quot;]" />
           </Sequence>
         </If.Else>
       </If>
@@ -177,7 +177,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="LogMessage_77" Level="Info" Message="[&quot;Attempting to store stock data into a CSV file.&quot;]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="LogMessage_77" Level="Info" Message="[&quot;Output generator: Attempting to store stock data into a CSV file.&quot;]" />
             <Assign sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="Assign_1">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[outputFilePath]</OutArgument>
@@ -193,7 +193,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:AppendWriteCsvFile>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_78" Level="Info" Message="[&quot;Successfully stored stock data into CSV file. Output filepath: &quot; + outputFilePath]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_78" Level="Info" Message="[&quot;Output generator: Successfully stored stock data into CSV file. Output filepath: &quot; + outputFilePath]" />
           </Sequence>
         </TryCatch.Try>
         <TryCatch.Catches>
@@ -208,7 +208,7 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_76" Level="Error" Message="[&quot;Failed to store stockData into a CSV file. Reason: &quot; + If(exception.InnerException IsNot Nothing, exception.InnerException.Message, exception.Message)]" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_76" Level="Error" Message="[&quot;Output generator: Failed to store stockData into a CSV file. Reason: &quot; + If(exception.InnerException IsNot Nothing, exception.InnerException.Message, exception.Message)]" />
               </Sequence>
             </ActivityAction>
           </Catch>

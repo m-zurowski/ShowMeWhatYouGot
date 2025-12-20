@@ -135,7 +135,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap:VirtualizedContainerService.HintSize="2178,625.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="2178,929.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="websiteUrl" />
     </Sequence.Variables>
@@ -144,7 +144,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Load data, prepare browser for stock data processing." sap:VirtualizedContainerService.HintSize="484,302" sap2010:WorkflowViewState.IdRef="Sequence_49">
+    <Sequence DisplayName="Load data, prepare browser for stock data processing." sap:VirtualizedContainerService.HintSize="484,420" sap2010:WorkflowViewState.IdRef="Sequence_49">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="inputFilePath" />
       </Sequence.Variables>
@@ -498,7 +498,13 @@
           </TryCatch.Finally>
         </TryCatch>
       </Sequence>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="LogMessage_52" Level="Info" Message="[&quot;Initialization: Step completed successfully.&quot;]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,166" sap2010:WorkflowViewState.IdRef="LogMessage_52" Level="Info" Message="[&quot;Initialization: All steps completed successfully. Proceeding to main task.&quot;]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:LogMessage>
     </Sequence>
   </Sequence>
 </Activity>

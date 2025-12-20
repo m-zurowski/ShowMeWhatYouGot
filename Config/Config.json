@@ -1,8 +1,9 @@
 ﻿{
-	"Environment": "TEST",
-	"URL": "https://www.londonstockexchange.com//",
-	"ProdInputFilePath": "Data\\Input\\London Stock Exchange task - input.csv",
-	"TestInputFilePath": "Data\\Input\\test.csv",
-	"OutputFolder": "Data\\Output\\",
-	"OutputFileName": "London Stock Exchange task - output.csv"
+  "Environment": "PROD",
+  "_comment_Environment": "Possible values are 'PROD' or 'TEST'",
+  "URL": "https://www.londonstockexchange.com//",
+  "ProdInputFilePath": "Data\\Input\\London Stock Exchange task - input.csv",
+  "TestInputFilePath": "Data\\Input\\test.csv",
+  "OutputFolder": "Data\\Output\\",
+  "OutputFileName": "London Stock Exchange task - output.csv"
 }

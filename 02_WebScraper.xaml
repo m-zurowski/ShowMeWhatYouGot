@@ -58,6 +58,8 @@
       <x:String>System.Net.Mail</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -134,13 +136,19 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="2172,6050" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence sap:VirtualizedContainerService.HintSize="2172,8973" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Retrieve stock data from London Stock Exchange" sap:VirtualizedContainerService.HintSize="662,6027" sap2010:WorkflowViewState.IdRef="Sequence_50">
+    <Sequence DisplayName="Retrieve stock data from London Stock Exchange" sap:VirtualizedContainerService.HintSize="662,8950" sap2010:WorkflowViewState.IdRef="Sequence_50">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="tradeCurrency" />
         <Variable x:TypeArguments="x:String" Name="tradeValue" />
@@ -156,7 +164,7 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="628,175" sap2010:WorkflowViewState.IdRef="LogMessage_57" Level="Info" Message="[&quot;Web scraper: Starting to loop through each row in data table.&quot;]">
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="628,175" sap2010:WorkflowViewState.IdRef="LogMessage_57" Level="Info" Message="[&quot;Web scraper: Attempting to get most recent trade data for each company in input file.&quot;]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -170,27 +178,33 @@
         <Assign.Value>
           <InArgument x:TypeArguments="x:Int32">[0]</InArgument>
         </Assign.Value>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
       </Assign>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" DisplayName="Chrome Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="628,5428" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InUiElement="[activeBrowser]" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="4b2648d2-bd2a-4265-9dc2-3d311e677421" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" DisplayName="Chrome Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="628,8351" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InUiElement="[activeBrowser]" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="4b2648d2-bd2a-4265-9dc2-3d311e677421" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="626,5297" sap2010:WorkflowViewState.IdRef="Sequence_51">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="626,8220" sap2010:WorkflowViewState.IdRef="Sequence_51">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[stockData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="592,5233" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[stockData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="592,8156" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                 <ui:ForEachRow.Body>
                   <ActivityAction x:TypeArguments="sd:DataRow">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="590,5056" sap2010:WorkflowViewState.IdRef="Sequence_52">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="590,7979" sap2010:WorkflowViewState.IdRef="Sequence_52">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:String" Name="currentSearchPhrase" />
                       </Sequence.Variables>
@@ -200,7 +214,7 @@
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Sequence DisplayName="Open Company Page" sap:VirtualizedContainerService.HintSize="556,61" sap2010:WorkflowViewState.IdRef="Sequence_74">
+                      <Sequence DisplayName="Open Company Page" sap:VirtualizedContainerService.HintSize="556,2976" sap2010:WorkflowViewState.IdRef="Sequence_74">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -237,7 +251,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:LogMessage>
-                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="488,2323" sap2010:WorkflowViewState.IdRef="TryCatch_9">
+                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="488,2339" sap2010:WorkflowViewState.IdRef="TryCatch_9">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -245,7 +259,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <TryCatch.Try>
-                            <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="486,1822" sap2010:WorkflowViewState.IdRef="Sequence_71">
+                            <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="486,1838" sap2010:WorkflowViewState.IdRef="Sequence_71">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="x:String" Name="searchResultLabel" />
                               </Sequence.Variables>
@@ -285,21 +299,21 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NGetText>
-                              <If Condition="[searchResultLabel = &quot;Instrument&quot;]" sap:VirtualizedContainerService.HintSize="452,1214" sap2010:WorkflowViewState.IdRef="If_4">
+                              <If Condition="[searchResultLabel = &quot;Instrument&quot;]" sap:VirtualizedContainerService.HintSize="452,1230" sap2010:WorkflowViewState.IdRef="If_4">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                                 <If.Then>
-                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,850" sap2010:WorkflowViewState.IdRef="Sequence_76">
+                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,862" sap2010:WorkflowViewState.IdRef="Sequence_76">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_56" Level="Trace" Message="[&quot;Web scraper: Search engine found at least one matching company.&quot;]">
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="LogMessage_56" Level="Trace" Message="[&quot;Web scraper: Search engine found at least one matching company.&quot;]">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -307,7 +321,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </ui:LogMessage>
-                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Company Name'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,266" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4b2648d2-bd2a-4265-9dc2-3d311e677421" Timeout="5" Version="V5">
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Company Name'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,270" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4b2648d2-bd2a-4265-9dc2-3d311e677421" Timeout="5" Version="V5">
                                       <uix:NClick.Target>
                                         <uix:TargetAnchorable BrowserURL="londonstockexchange.com/stock/VOD/vodafone-group-plc/company-page" CVScreenId="247302f9-0111-4617-89d5-d28d5a909e21" ContentHash="tQuOnGVF4EKc5TVtdXOTWA" DesignTimeRectangle="1212, 210, 29, 18" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='issuer-key' parentid='instrument-0' tag='DIV' /&gt;" Guid="5d88cbb7-4c33-4ec1-83a5-665000f120e9" InformativeScreenshot="95da2dcf7d543a4ef81f6cb8ccfb2231.png" Reference="f-pMzuCHXEmXz7kq9WENMQ/GvH8BzFBhUqMlWGOs2n5Tg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='VODAFONE GROUP PLC VOD Stock | London Stock Exchange' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                       </uix:NClick.Target>
@@ -338,7 +352,7 @@
                                         <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
                                       </Assign.Value>
                                     </Assign>
-                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_54" Level="Info" Message="[&quot;Web scraper: Loading page for: &quot; + currentSearchPhrase]">
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_54" Level="Trace" Message="[&quot;Web scraper: Loading page for: &quot; + currentSearchPhrase]">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -349,7 +363,7 @@
                                   </Sequence>
                                 </If.Then>
                                 <If.Else>
-                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,230" sap2010:WorkflowViewState.IdRef="Sequence_77">
+                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,234" sap2010:WorkflowViewState.IdRef="Sequence_77">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -390,14 +404,14 @@
                           </TryCatch.Finally>
                         </TryCatch>
                       </Sequence>
-                      <Sequence DisplayName="Retrieve Most Recent Trade Data" sap:VirtualizedContainerService.HintSize="556,2573" sap2010:WorkflowViewState.IdRef="Sequence_83">
+                      <Sequence DisplayName="Retrieve Most Recent Trade Data" sap:VirtualizedContainerService.HintSize="556,2577" sap2010:WorkflowViewState.IdRef="Sequence_83">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <If Condition="[companyFound]" sap:VirtualizedContainerService.HintSize="488,2473" sap2010:WorkflowViewState.IdRef="If_8">
+                        <If Condition="[companyFound]" sap:VirtualizedContainerService.HintSize="488,2477" sap2010:WorkflowViewState.IdRef="If_8">
                           <If.Then>
                             <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,2249" sap2010:WorkflowViewState.IdRef="Sequence_96">
                               <sap:WorkflowViewStateService.ViewState>
@@ -546,14 +560,14 @@
                                         <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
                                       </Assign.Value>
                                     </Assign>
-                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_69" Level="Info" Message="[&quot;Web scraper: Successfully retrieved trade data for: &quot; + currentSearchPhrase]" />
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_69" Level="Trace" Message="[&quot;Web scraper: Successfully retrieved trade data for: &quot; + currentSearchPhrase]" />
                                   </Sequence>
                                 </TryCatch.Try>
                               </TryCatch>
                             </Sequence>
                           </If.Then>
                           <If.Else>
-                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,90" sap2010:WorkflowViewState.IdRef="Sequence_97">
+                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,94" sap2010:WorkflowViewState.IdRef="Sequence_97">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -563,7 +577,7 @@
                           </If.Else>
                         </If>
                       </Sequence>
-                      <Sequence DisplayName="Update stockData" sap:VirtualizedContainerService.HintSize="556,2358" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                      <Sequence DisplayName="Update stockData" sap:VirtualizedContainerService.HintSize="556,2362" sap2010:WorkflowViewState.IdRef="Sequence_53">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:String" Name="tradeTimeStamp" />
                         </Sequence.Variables>
@@ -573,7 +587,7 @@
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <If Condition="[companyFound And foundTradeData]" DisplayName="If company found" sap:VirtualizedContainerService.HintSize="522,2097" sap2010:WorkflowViewState.IdRef="If_5">
+                        <If Condition="[companyFound And foundTradeData]" DisplayName="If company found" sap:VirtualizedContainerService.HintSize="522,2101" sap2010:WorkflowViewState.IdRef="If_5">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -681,7 +695,7 @@
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,179" sap2010:WorkflowViewState.IdRef="LogMessage_75" Level="Warn" Message="[&quot;Web scraper: Couldn't find any data for: '&quot; + currentSearchPhrase + &quot;'. Marking timestamp and value as 'N/A'.&quot;]" />
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,179" sap2010:WorkflowViewState.IdRef="LogMessage_75" Level="Warn" Message="[&quot;Web scraper: No data for: '&quot; + currentSearchPhrase + &quot;'. Marking 'timestamp' and 'value' as 'N/A'.&quot;]" />
                               <Assign sap:VirtualizedContainerService.HintSize="486,179" sap2010:WorkflowViewState.IdRef="Assign_9">
                                 <Assign.To>
                                   <OutArgument x:TypeArguments="x:Object">[CurrentRow.Item("timestamp")]</OutArgument>
@@ -739,7 +753,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </uix:NApplicationCard>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="628,166" sap2010:WorkflowViewState.IdRef="LogMessage_79" Level="Info" Message="[&quot;Web scraper: Finished looping through all rows in stock data. Found: &quot; + successCount.ToString() + &quot; out of: &quot; + stockData.RowCount.ToString() + &quot; entries.&quot;]">
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="628,166" sap2010:WorkflowViewState.IdRef="LogMessage_79" Level="Info" Message="[&quot;Web scraper: Finished scraping data for all companies from input file. Found data for &quot; + successCount.ToString() + &quot; out of &quot; + stockData.RowCount.ToString() + &quot; entries.&quot;]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
