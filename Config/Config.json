@@ -1,6 +1,8 @@
 ﻿{
+	"Environment": "TEST",
 	"URL": "https://www.londonstockexchange.com//",
-	"InputFilePath": "Data\\Input\\London Stock Exchange task - input.csv",
-	"OutputFolder": "Data\\Output",
+	"ProdInputFilePath": "Data\\Input\\London Stock Exchange task - input.csv",
+	"TestInputFilePath": "Data\\Input\\test.csv",
+	"OutputFolder": "Data\\Output\\",
 	"OutputFileName": "London Stock Exchange task - output.csv"
 }
